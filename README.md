@@ -2,5 +2,5 @@
 Ansible playbooks
 
 ```bash
-ansible-playbook -i inventory/inventory.ini quobyte.yml
+ansible-playbook -i inventory/inventory.ini nginx.yml
 ```
