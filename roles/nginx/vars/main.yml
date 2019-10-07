@@ -31,7 +31,7 @@
       }
 
       location / {
-        proxy_pass https://qacontentmunich;
+        proxy_pass https://qacontentusa;
       }
 #   template: "" # Can be used to override the `nginx_vhost_template` per host.
 #   state: "absent" # To remove the vhost configuration.
@@ -50,9 +50,9 @@
       "qa-swarm-usa-1.example.com:8483"
     }
 
-  - name: qacontentmunich
+  - name: qacontentusa
     strategy: "ip_hash" # "least_conn", etc.
     keepalive: 16 # optional
     servers: {
-      "qa-muc.example.com:443"
+      "qa-usa.example.com:443"
     }

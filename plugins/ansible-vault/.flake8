@@ -1,3 +1,0 @@
-[flake8]
-ignore = D101, D100, D102
-max-line-length = 120
